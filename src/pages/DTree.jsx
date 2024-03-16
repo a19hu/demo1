@@ -26,7 +26,7 @@ const DTree = () => {
       }
     };
 
-    fetchData();
+    // fetchData();
   }, []);
 // console.log(data)
  
@@ -44,7 +44,12 @@ const DTree = () => {
     all_parent.children.push(item);
 });
   new_data.push(all_parent)
-
+   const datas=[
+    {
+      name:'all',
+      children:[]
+    }
+   ]
   // const handleNodeClick = (nodeData, event) => {
 
   // };
@@ -141,7 +146,9 @@ const DTree = () => {
     {showModal && (
           <Homeprofile  data={roll} />
                             )}
-    <Tree data={new_data} 
+    <Tree 
+    // data={new_data} 
+    data={datas}
     scaleExtent={{
       min: 1, 
       max: 1
