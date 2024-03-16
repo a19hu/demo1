@@ -26,7 +26,7 @@ const DTree = () => {
       }
     };
 
-    // fetchData();
+    fetchData();
   }, []);
 // console.log(data)
  
@@ -147,8 +147,8 @@ const DTree = () => {
           <Homeprofile  data={roll} />
                             )}
     <Tree 
-    // data={new_data} 
-    data={datas}
+    data={new_data} 
+    // data={datas}
     scaleExtent={{
       min: 1, 
       max: 1
